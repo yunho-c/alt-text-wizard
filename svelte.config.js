@@ -2,6 +2,7 @@
 import UnoCss from 'unocss/vite';
 import { extractorSvelte } from 'unocss';
 import preprocess from 'svelte-preprocess';
+import adapter from '@sveltejs/adapter-static';
 
 const config = {
   preprocess: [preprocess()],
@@ -10,6 +11,8 @@ const config = {
     vite: {
       plugins: [UnoCss({ extractors: [extractorSvelte] })],
     },
+    adapter: adapter(),
+    appDir: 'app'
   },
 };
 
