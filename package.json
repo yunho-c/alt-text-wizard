@@ -13,9 +13,10 @@
     "package": "plasmo package"
   },
   "dependencies": {
-    "plasmo": "workspace:*",
+    "plasmo": "^0.82.0",
     "svelte": "4.0.5",
-    "svelte-preprocess": "5.0.4"
+    "svelte-preprocess": "5.0.4",
+    "with-svelte": "link:"
   },
   "devDependencies": {
     "@ianvs/prettier-plugin-sort-imports": "4.1.0",
