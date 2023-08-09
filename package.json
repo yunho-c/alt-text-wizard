@@ -1,24 +1,32 @@
 {
-  "name": "my-app",
+  "name": "with-svelte",
+  "displayName": "With svelte",
   "version": "0.0.1",
+  "description": "A basic Plasmo extension.",
+  "author": "Plasmo Corp. <foss@plasmo.com>",
+  "contributors": [
+    "louisgv"
+  ],
   "scripts": {
-    "dev": "svelte-kit dev",
-    "build": "svelte-kit build && node removeInlineScript.cjs",
-    "preview": "svelte-kit preview",
-    "lint": "prettier --ignore-path .gitignore --check --plugin-search-dir=. .",
-    "format": "prettier --ignore-path .gitignore --write --plugin-search-dir=. ."
+    "dev": "plasmo dev",
+    "build": "plasmo build",
+    "package": "plasmo package"
+  },
+  "dependencies": {
+    "plasmo": "workspace:*",
+    "svelte": "4.0.5",
+    "svelte-preprocess": "5.0.4"
   },
   "devDependencies": {
-    "@iconify/json": "^2.2.98",
-    "@sveltejs/adapter-static": "^2.0.3",
-    "@sveltejs/kit": "1.22.4",
-    "@unocss/reset": "^0.54.1",
-    "prettier": "^3.0.1",
-    "prettier-plugin-svelte": "^3.0.3",
-    "svelte": "^4.1.2",
-    "svelte-preprocess": "^5.0.4",
-    "typescript": "",
-    "unocss": "^0.54.1"
+    "@ianvs/prettier-plugin-sort-imports": "4.1.0",
+    "@types/chrome": "0.0.241",
+    "@types/node": "20.4.2",
+    "prettier": "3.0.0",
+    "typescript": "5.1.6"
   },
-  "type": "module"
+  "manifest": {
+    "host_permissions": [
+      "https://*/*"
+    ]
+  }
 }
