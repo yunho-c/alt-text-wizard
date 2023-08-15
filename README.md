@@ -1,35 +1,60 @@
-This is a [Plasmo extension](https://docs.plasmo.com/) project bootstrapped with [`plasmo init`](https://www.npmjs.com/package/plasmo).
+# Drawing Board
 
-## Getting Started
+Purpose
+- I want them to think that my project is cool, and want to make them invested in the project to learn more, try, & contribute.
 
-First, make sure to replace `type="ts"` with `lang="ts"` in your Svelte components.
+Important Questions
+- What does this project have anything to do with them?
+  - (If the answer is nothing: how can I make my project cool enough that unrelated people find it nice?)
 
-Second, run the development server:
+Parts
+- Catchy Intro
+- Problem, Fundamental Principles, Results
+- Traction
+- Link to docs for testers, developers
 
-```bash
-pnpm dev
-# or
-npm run dev
-```
+#### Title
+`auto-alt-text-wizard`
 
-Open your browser and load the appropriate development build. For example, if you are developing for the chrome browser, using manifest v3, use: `build/chrome-mv3-dev`.
+#### Description
+Browser extension that generates alt text on-the-fly, powered by AI
 
-You can start editing the popup by modifying `popup.tsx`. It should auto-update as you make changes. To add an options page, simply add a `options.tsx` file to the root of the project, with a react component default exported. Likewise to add a content page, add a `content.ts` file to the root of the project, importing some module and do some logic, then reload the extension on your browser.
+---
+<br/>
+<br/>
+<br/>
 
-For further guidance, [visit our Documentation](https://docs.plasmo.com/)
 
-## Making production build
 
-Run the following:
+# Auto Alt Text Wizard
 
-```bash
-pnpm build
-# or
-npm run build
-```
+[`TODO`: catchy YouTube video that browses instagram with stunning details, words fading in as AI speaks]
 
-This should create a production bundle for your extension, ready to be zipped and published to the stores.
+Auto Alt Text Wizard (AATW) is a browser extension that generates accurate and descriptive [alt text]() on-the-fly, using latest innovations AI.  
 
-## Submit to the webstores
+All code runs locally and no data leaves your computer, as long as the system contains enough video RAM to load the vision-LLM engine (see [minimum requirement]()). 
 
-The easiest way to deploy your Plasmo extension is to use the built-in [bpp](https://bpp.browser.market) GitHub action. Prior to using this action however, make sure to build your extension and upload the first version to the store to establish the basic credentials. Then, simply follow [this setup instruction](https://docs.plasmo.com/framework/workflows/submit) and you should be on your way for automated submission!
+If you want to learn more about how it works, read on!
+
+
+## How it works
+
+> (If you are not familiar with the machine learning terminologies, [this]() is a great resource to get started!)
+
+This project consists of four main components:
+
+- (**ML optimization & compilation pipeline** based on [Apache TVM]())
+- **The OCR Engine** based on [PaddleOCR]() re-implemented using TVM
+- **The Vision-LLM Engine** based on [LLaVA](), a multimodal large-language model derived from LLaMA 2
+- **The actual browser extension** that scans the page to find images, runs the ML models, and adds the alt-text attribute tags 
+
+## ML Optimization Pipeline
+
+
+
+## OCR Engine
+
+
+
+## Vision-LLM Engine
+
