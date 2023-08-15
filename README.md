@@ -1,38 +1,60 @@
-# create-svelte
+# Drawing Board
 
-Everything you need to build a Svelte project, powered by [`create-svelte`](https://github.com/sveltejs/kit/tree/master/packages/create-svelte);
+Purpose
+- I want them to think that my project is cool, and want to make them invested in the project to learn more, try, & contribute.
 
-## Creating a project
+Important Questions
+- What does this project have anything to do with them?
+  - (If the answer is nothing: how can I make my project cool enough that unrelated people find it nice?)
 
-If you're seeing this, you've probably already done this step. Congrats!
+Parts
+- Catchy Intro
+- Problem, Fundamental Principles, Results
+- Traction
+- Link to docs for testers, developers
 
-```bash
-# create a new project in the current directory
-npm init svelte@next
+#### Title
+`auto-alt-text-wizard`
 
-# create a new project in my-app
-npm init svelte@next my-app
-```
+#### Description
+Browser extension that generates alt text on-the-fly, powered by AI
 
-> Note: the `@next` is temporary
+---
+<br/>
+<br/>
+<br/>
 
-## Developing
 
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
 
-```bash
-npm run dev
+# Auto Alt Text Wizard
 
-# or start the server and open the app in a new browser tab
-npm run dev -- --open
-```
+[`TODO`: catchy YouTube video that browses instagram with stunning details, words fading in as AI speaks]
 
-## Building
+Auto Alt Text Wizard (AATW) is a browser extension that generates accurate and descriptive [alt text]() on-the-fly, using latest innovations AI.  
 
-Before creating a production version of your app, install an [adapter](https://kit.svelte.dev/docs#adapters) for your target environment. Then:
+All code runs locally and no data leaves your computer, as long as the system contains enough video RAM to load the vision-LLM engine (see [minimum requirement]()). 
 
-```bash
-npm run build
-```
+If you want to learn more about how it works, read on!
 
-> You can preview the built app with `npm run preview`, regardless of whether you installed an adapter. This should _not_ be used to serve your app in production.
+
+## How it works
+
+> (If you are not familiar with the machine learning terminologies, [this]() is a great resource to get started!)
+
+This project consists of four main components:
+
+- (**ML optimization & compilation pipeline** based on [Apache TVM]())
+- **The OCR Engine** based on [PaddleOCR]() re-implemented using TVM
+- **The Vision-LLM Engine** based on [LLaVA](), a multimodal large-language model derived from LLaMA 2
+- **The actual browser extension** that scans the page to find images, runs the ML models, and adds the alt-text attribute tags 
+
+## ML Optimization Pipeline
+
+
+
+## OCR Engine
+
+
+
+## Vision-LLM Engine
+
